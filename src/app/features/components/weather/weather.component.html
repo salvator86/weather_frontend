@@ -1,0 +1,14 @@
+<ng-container *ngIf="weather.city">
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>{{weather.city}}</mat-card-title>
+      <mat-card-subtitle>{{weather.localTime}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Temperature: {{weather.temperature}}</p>
+      <p>Weather conditions: {{weather.WeatherText}}</p>
+    </mat-card-content>
+  </mat-card>
+</ng-container>
+<p *ngIf="weatherService.isShowedErrorMessage"
+   class="error-message">'You requested a not existed city or there is no available attempts to request :(',</p>

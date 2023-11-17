@@ -1,0 +1,19 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/* Задаємо кольорову палітру для нашої теми */
+:root {
+  --my-app-primary: #3F51B5; /* Синій колір */
+  --my-app-accent: #FF4081; /* Рожевий колір */
+}
+
+/* Використовуємо нашу створену тему */
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: var(--my-app-background) !important;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

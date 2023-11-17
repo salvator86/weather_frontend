@@ -1,0 +1,7 @@
+<form class="form" [formGroup]="form" (ngSubmit)="searchWeather(form)">
+  <mat-form-field class="form__full-width">
+    <input formControlName="searchInput" matInput placeholder="Search repositories">
+  </mat-form-field>
+  <button mat-raised-button color="primary" type="submit">Search</button>
+  <mat-spinner *ngIf="weatherService.isLoading"></mat-spinner>
+</form>
